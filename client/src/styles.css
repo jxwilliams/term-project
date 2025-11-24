@@ -1,0 +1,220 @@
+/* i keep styling simple and use color names */
+
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  color: black;
+  background: whitesmoke;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: black;
+  color: white;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.nav-right {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.nav-username {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.main {
+  flex: 1;
+  padding: 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  font: inherit;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn-primary,
+.btn-outline,
+.btn-small {
+  border-radius: 999px;
+  border: none;
+  padding: 0.45rem 0.9rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: blue;
+  color: white;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-small {
+  background: gainsboro;
+}
+
+.btn-small.danger {
+  background: lightcoral;
+}
+
+.btn-small:hover {
+  filter: brightness(0.95);
+}
+
+.error-text {
+  color: darkred;
+  font-size: 0.85rem;
+}
+
+.muted {
+  color: gray;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.6rem 0.4rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.task-item.done h3 {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-main {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.task-desc {
+  margin: 0.15rem 0;
+  font-size: 0.9rem;
+}
+
+.task-due {
+  margin: 0;
+  font-size: 0.8rem;
+  color: dimgray;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 800px) {
+  .grid {
+    grid-template-columns: 1.1fr 1.5fr;
+  }
+}
+
+.auth-layout {
+  max-width: 420px;
+  margin: 2rem auto;
+}
+
+.auth-toggle {
+  display: flex;
+  margin-bottom: 0.75rem;
+}
+
+.tab {
+  flex: 1;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: none;
+  background: lightgray;
+}
+
+.tab.active {
+  background: blue;
+  color: white;
+}
+
+.quote-card {
+  margin-bottom: 1rem;
+}
+
+.quote-text {
+  font-style: italic;
+  margin: 0;
+}
+
+.quote-author {
+  text-align: right;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: dimgray;
+}
